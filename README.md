@@ -12,7 +12,11 @@ It exists mainly so:
    which Google's crawlers require to be at the domain root regardless of
    which project subpath the actual traffic/ads run on.
 
-Visitors are redirected to **[QAQEST](https://brutecarlos.github.io/qaqest/)**,
+Visitors are shown a simple landing page linking to
+**[QAQEST](https://brutecarlos.github.io/qaqest/)**,
 the actual project site (free practice exams for software testing
 certifications), hosted from
-[brutecarlos/qaqest](https://github.com/brutecarlos/qaqest).
+[brutecarlos/qaqest](https://github.com/brutecarlos/qaqest). It
+intentionally does **not** auto-redirect (e.g. via `<meta http-equiv=refresh>`),
+so AdSense's crawler reliably sees this page's own content (including the
+verification `<script>` tag) rather than following a redirect elsewhere.
