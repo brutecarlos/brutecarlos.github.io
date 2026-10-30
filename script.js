@@ -58,13 +58,14 @@ function applySpanishLocalization() {
     ['#experience .section-label', 'Experiencia'],
     ['#experience .section-title', 'Dónde he trabajado'],
     ['#experience .timeline-item:nth-child(1) .timeline-period', '2024 — actualidad'],
-    ['#experience .timeline-item:nth-child(1) .timeline-role', 'Ingeniero QA Senior'],
-    ['#experience .timeline-item:nth-child(1) .timeline-desc', 'Liderando testing manual end-to-end en iOS, Android y web para productos de lotería y punto de venta. Supervisando la calidad y las salidas a producción de BCLC. Proyectos clave:'],
-    ['#experience .timeline-item:nth-child(1) .timeline-list li:nth-child(1)', 'BCLC — Responsable QA de iOS y Android durante más de 2 años. Validé migraciones de .NET → Swift (iOS) y Xamarin/.NET → Kotlin (Android).'],
-    ['#experience .timeline-item:nth-child(1) .timeline-list li:nth-child(2)', 'Point of Sale (venta de tickets) — Coordinación E2E desde la concepción del producto hasta la venta final, incluyendo integración tablet-impresora y validación de escenarios críticos.'],
-    ['#experience .timeline-item:nth-child(1) .timeline-list li:nth-child(3)', 'Retail Lottery Management System — QA de una plataforma retail para promociones, assets, juegos, stock, agenda de tiendas y operaciones de punto de venta.'],
-    ['#experience .timeline-item:nth-child(1) .timeline-list li:nth-child(4)', 'Validación de APIs con Postman y Charles Proxy. Testing de hardware: impresoras, tablets, placas Rockchip y Raspberry Pi.'],
-    ['#experience .timeline-item:nth-child(1) .timeline-list li:nth-child(5)', 'Demos para clientes y dirección. QA asistido por IA: análisis de criterios de aceptación, triaje de defectos, revisión de logs y generación de escenarios de prueba.'],
+    ['#experience .timeline-item:nth-child(1) .timeline-role', 'Ingeniero QA'],
+    ['#experience .timeline-item:nth-child(1) .timeline-desc', 'Empleado de Pollard Banknote y trabajando a través de mkodo en productos de lotería. Testing manual end-to-end en iOS, Android y web, apoyando la calidad y las salidas a producción de soluciones de lotería y punto de venta. Proyectos clave:'],
+    ['#experience .timeline-item:nth-child(1) .timeline-list li:nth-child(1)', 'Juegos de rasca digitales — testing de juegos de rasca digitales para una empresa de lotería, cubriendo el comportamiento del juego, los resultados y los recorridos multiplataforma.'],
+    ['#experience .timeline-item:nth-child(1) .timeline-list li:nth-child(2)', 'Apps móviles de lotería — Responsable QA de iOS y Android durante más de 2 años. Validé migraciones de .NET → Swift (iOS) y Xamarin/.NET → Kotlin (Android).'],
+    ['#experience .timeline-item:nth-child(1) .timeline-list li:nth-child(3)', 'Point of Sale (venta de tickets) — Coordinación E2E desde la concepción del producto hasta la venta final, incluyendo integración tablet-impresora y validación de escenarios críticos.'],
+    ['#experience .timeline-item:nth-child(1) .timeline-list li:nth-child(4)', 'Retail Lottery Management System — QA de una plataforma retail para promociones, assets, juegos, stock, agenda de tiendas y operaciones de punto de venta.'],
+    ['#experience .timeline-item:nth-child(1) .timeline-list li:nth-child(5)', 'Validación de APIs con Postman y Charles Proxy. Testing de hardware: impresoras, tablets, placas Rockchip y Raspberry Pi.'],
+    ['#experience .timeline-item:nth-child(1) .timeline-list li:nth-child(6)', 'Demos para clientes y dirección. QA asistido por IA: análisis de criterios de aceptación, triaje de defectos, revisión de logs y generación de escenarios de prueba.'],
     ['#experience .timeline-item:nth-child(2) .timeline-role', 'QA Tester Senior'],
     ['#experience .timeline-item:nth-child(2) .timeline-desc', 'Responsable del testing manual y de regresión de productos de Bingo y Arcade en Android, iOS, Windows y macOS. Soporte a releases quincenales en cuatro plataformas.'],
     ['#experience .timeline-item:nth-child(2) .timeline-list li:nth-child(1)', 'Amplia experiencia en QA de pagos: VISA, Mastercard, Amex, tarjetas prepago, PaysafeCard, SEPA y PayPal; depósitos, retiradas, conciliación y verificación en base de datos (comprobaciones SQL).'],
@@ -101,12 +102,10 @@ function applySpanishLocalization() {
 
     ['#contact .section-label', 'Contacto'],
     ['#contact .section-title', 'Conectemos'],
-    ['#contact .section-sub', 'Abierto a posiciones remotas, equipos internacionales y retos interesantes de QA.'],
-    ['#contact .contact-links .contact-card:nth-child(2) span', 'Correo']
+    ['#contact .section-sub', 'Abierto a posiciones remotas, equipos internacionales y retos interesantes de QA. La mejor forma de contactarme es por LinkedIn.'],
   ];
 
   replacements.forEach(([selector, text]) => setText(selector, text));
-  setHTML('.hero-cta a:nth-child(3)', '<i class="fas fa-envelope"></i> Contáctame');
 
   const hamburger = document.getElementById('hamburger');
   if (hamburger) hamburger.setAttribute('aria-label', 'Mostrar menú');
