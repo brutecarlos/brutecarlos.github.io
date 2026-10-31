@@ -43,6 +43,7 @@ function applySpanishLocalization() {
     ['.hero-subtitle', 'Más de 5 años detectando errores antes de producción · Certificado ISTQB · Automatizando flujos de iOS, Android y web con Playwright'],
     ['.hero-quote', '“Me adapto rápido a mercados inciertos y entrego resultados comprobados.”'],
     ['.hero-cta a:nth-child(1)', 'Ver experiencia'],
+    ['.hero-cta a:nth-child(3)', 'Descargar CV (PDF)'],
 
     ['#about .section-label', 'Sobre mí'],
     ['#about .section-title', '¿Quién soy?'],
