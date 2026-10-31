@@ -29,8 +29,8 @@ function getPreferredLanguage() {
 
 function applySpanishLocalization() {
   document.documentElement.lang = 'es';
-  document.title = 'Carlos Luque Ruiz – Ingeniero QA Senior';
-  setMetaDescription('Ingeniero QA Senior con más de 5 años de experiencia en entornos regulados, validación SQL y automatización con Playwright.');
+  document.title = 'Carlos Luque Ruiz – Ingeniero QA';
+  setMetaDescription('Ingeniero QA con más de 5 años de experiencia en entornos regulados, validación SQL y automatización con Playwright.');
 
   const replacements = [
     ['.skip-link', 'Saltar al contenido'],
@@ -39,14 +39,14 @@ function applySpanishLocalization() {
     ['.nav-links li:nth-child(3) a', 'Habilidades'],
     ['.nav-links li:nth-child(4) a', 'Proyectos'],
     ['.nav-links li:nth-child(5) a', 'Contacto'],
-    ['.hero-eyebrow', 'Ingeniero QA Senior · España · Abierto a equipos remotos e internacionales'],
+    ['.hero-eyebrow', 'Ingeniero QA · España · Abierto a equipos remotos e internacionales'],
     ['.hero-subtitle', 'Más de 5 años detectando errores antes de producción · Certificado ISTQB · Automatizando flujos de iOS, Android y web con Playwright'],
     ['.hero-quote', '“Me adapto rápido a mercados inciertos y entrego resultados comprobados.”'],
     ['.hero-cta a:nth-child(1)', 'Ver experiencia'],
 
     ['#about .section-label', 'Sobre mí'],
     ['#about .section-title', '¿Quién soy?'],
-    ['#about .about-text p:nth-child(1)', 'Soy un Senior QA Engineer con más de 5 años de experiencia en validación funcional, regresión, API, hardware y soporte de producto en entornos regulados y exigentes, incluyendo marcos de calidad ISO 9001.'],
+    ['#about .about-text p:nth-child(1)', 'Soy QA Engineer con más de 5 años de experiencia en validación funcional, regresión, API, hardware y soporte de producto en entornos regulados y exigentes, incluyendo marcos de calidad ISO 9001.'],
     ['#about .about-text p:nth-child(2)', 'Abordo el QA con una mentalidad muy práctica: detectar riesgos antes de producción, diseñar pruebas que cubran el negocio real, coordinar validaciones end-to-end y comunicar hallazgos con claridad a equipos técnicos, clientes y directivos.'],
     ['#about .about-text p:nth-child(3)', 'He trabajado en loterías, punto de venta, CMS, impresoras, dispositivos embebidos y migraciones tecnológicas complejas.'],
     ['#about .about-text p:nth-child(4)', 'Actualmente estoy construyendo mi portfolio de automatización con Playwright, enfocado en cobertura end-to-end de recorridos de apps iOS, Android y web. Español nativo · Inglés C2 · Francés C1.'],
@@ -89,6 +89,7 @@ function applySpanishLocalization() {
     ['#skills .skill-category:nth-child(3) li:nth-child(7)', 'Entorno de calidad ISO 9001'],
     ['#skills .skill-category:nth-child(4) h3', 'Plataformas'],
     ['#skills .skill-category:nth-child(4) li:nth-child(2)', 'Web (cross-browser)'],
+    ['#skills .cert-card:nth-child(1) p:nth-of-type(2)', 'International Software Quality Institute · Emitido en ago. 2023'],
     ['#skills .cert-card:nth-child(2) .cert-title', 'HyperionDev – Bootcamp de Ingeniería de Software'],
     ['#skills .cert-card:nth-child(2) .cert-sub', 'Fundamentos de Python · 2023'],
     ['#skills .cert-card:nth-child(3) .cert-title', 'Grado en Traducción e Interpretación (Francés e Inglés)'],
@@ -113,6 +114,13 @@ function applySpanishLocalization() {
   document.querySelectorAll('.project-store-link').forEach(link => {
     link.setAttribute('title', 'Visitar QAQEST');
   });
+
+  const certLine = document.querySelector('#skills .cert-card:nth-child(1) p:nth-of-type(3)');
+  if (certLine) {
+    const link = certLine.querySelector('a');
+    certLine.textContent = 'ID de credencial 23-CFTL-232229-06 · ';
+    if (link) { link.textContent = 'Verificar credencial'; certLine.appendChild(link); }
+  }
 
   const wipBadge = document.querySelector('.project-wip .wip-badge');
   if (wipBadge) {

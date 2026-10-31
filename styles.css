@@ -446,6 +446,8 @@ ul { list-style: none; }
   font-size: .8rem;
   color: var(--text-muted);
 }
+.cert-link { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+.cert-link:hover { opacity: .85; }
 
 /* ─── PROJECTS ───────────────────────────────────────────────── */
 .projects-grid {
