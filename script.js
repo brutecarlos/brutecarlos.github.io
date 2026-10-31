@@ -118,7 +118,7 @@ function applySpanishLocalization() {
   const certLine = document.querySelector('#skills .cert-card:nth-child(1) p:nth-of-type(3)');
   if (certLine) {
     const link = certLine.querySelector('a');
-    certLine.textContent = 'ID de credencial 23-CFTL-232229-06 · ';
+    certLine.textContent = 'ID de credencial 23-CTFL-232229-06 · ';
     if (link) { link.textContent = 'Verificar credencial'; certLine.appendChild(link); }
   }
 
