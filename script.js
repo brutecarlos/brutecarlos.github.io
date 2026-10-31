@@ -109,6 +109,9 @@ function applySpanishLocalization() {
 
   replacements.forEach(([selector, text]) => setText(selector, text));
 
+  const cvLink = document.querySelector('.hero-cta a:nth-child(3)');
+  if (cvLink) cvLink.setAttribute('href', 'assets/Carlos-QA-CV-es.pdf');
+
   const hamburger = document.getElementById('hamburger');
   if (hamburger) hamburger.setAttribute('aria-label', 'Mostrar menú');
 
